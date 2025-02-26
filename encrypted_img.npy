@@ -1,0 +1,28 @@
+'/mnt/data/image_2025_Feb_26_08_37_08.npy'
+image_2025_Feb_26_08_37_08.npyencrypted_img.jpg
+
+import numpy as np
+
+import cv2
+
+
+
+# Load the image
+
+image_path = "/mnt/data/image_2025_Feb_26_08_37_08.jpg"
+
+image = cv2.imread(image_path)
+
+
+
+# Convert the image to a NumPy array and save it
+
+npy_path = "/mnt/data/image_2025_Feb_26_08_37_08.npy"
+
+np.save(npy_path, image)
+
+
+
+# Return the path to the saved .npy file
+
+npy_path
